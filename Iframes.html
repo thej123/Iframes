@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>lab 19</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  </style>
+  <script type="text/javascript" src="Iframes.js">
+  </script>
+</head>
+<body onload="document.myForm.deptList.selectedIndex=0">
+    <form name="myForm">
+        <select name="deptList" size="3" onchange="getList(this)">
+            <option>National Geography</option>
+            <option value="1">Animals</option>
+            <option value="2">Nature</option>
+        </select>
+        <select size="4" name="pictures" onchange="getPicture(this)">
+            <option value="0" disabled>Images</option>
+        </select>
+    </form>
+    <iframe src ="" width="500" height="300" seamless="seamless"
+    id="myFrame">
+    <p>Your browser does not support iframes.</p>
+    </iframe>
+</body>
+</html>
